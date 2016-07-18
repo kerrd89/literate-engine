@@ -1,7 +1,8 @@
-// document.body.style.backgroundColor = 'rgb(' + (localStorage.getItem('backgroundColor')).join(',') + ')';
+// make default background same as prior using local storage
+
+document.body.style.backgroundColor = 'rgb(' + (localStorage.getItem('backgroundColor'))+ ')';
 
 
-// changeBackground(localStorage.getItem('backgroundColor'));
 
 var randomButton = document.querySelector('.btn');
 var clearButton = document.querySelector('.btn-clear');
@@ -13,8 +14,6 @@ function generateRandomBackground() {
   }
   return  [generateRandomNumber(),generateRandomNumber(),generateRandomNumber()];
 };
-
-var randomColor = 0;
 
 function resetBackground() {
   return [255,255,255];
