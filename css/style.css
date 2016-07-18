@@ -19,6 +19,14 @@ div {
   width: 125px;
 }
 
+.btn:hover {
+  border-top: 6px solid #CC7FB5;
+  border-bottom: 6px solid #CC7FB5;
+  border-left: 6px solid #E5B6D5;
+  border-right: 6px solid #E5B6D5;
+  background-color: #B2479A;
+}
+
 @media screen and (max-width: 400px) {
   div {
     display: flex;
